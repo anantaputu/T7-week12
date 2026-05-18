@@ -1,0 +1,117 @@
+QWidget {
+    background-color: #f4f7fb;
+    color: #1f2937;
+    font-family: "Segoe UI", "Noto Sans", sans-serif;
+    font-size: 13px;
+}
+
+QMainWindow {
+    background-color: #f4f7fb;
+}
+
+QLabel#pageTitle {
+    font-size: 28px;
+    font-weight: 700;
+    color: #102a43;
+    padding: 4px 0 8px 0;
+}
+
+QWidget#panel {
+    background: qlineargradient(
+        x1: 0, y1: 0, x2: 1, y2: 1,
+        stop: 0 #ffffff,
+        stop: 1 #eef4ff
+    );
+    border: 1px solid #d8e3f0;
+    border-radius: 18px;
+}
+
+QLabel#fieldLabel,
+QLabel#tableInfoLabel,
+QLabel#summaryCardTitle {
+    color: #52606d;
+    font-weight: 600;
+}
+
+QLabel#summaryCardValue {
+    color: #102a43;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+QFrame#summaryCard {
+    background-color: #ffffff;
+    border: 1px solid #dce6f2;
+    border-radius: 18px;
+}
+
+QComboBox,
+QLineEdit,
+QPushButton,
+QTableWidget {
+    border: 1px solid #c9d6e2;
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 8px 10px;
+}
+
+QComboBox:focus,
+QLineEdit:focus,
+QPushButton:focus,
+QTableWidget:focus {
+    border: 1px solid #2f80ed;
+}
+
+QPushButton {
+    background-color: #1f6feb;
+    color: #ffffff;
+    font-weight: 600;
+    min-height: 20px;
+}
+
+QPushButton:hover {
+    background-color: #185abc;
+}
+
+QPushButton:pressed {
+    background-color: #134a99;
+}
+
+QHeaderView::section {
+    background-color: #eaf1f8;
+    color: #243b53;
+    font-weight: 600;
+    border: none;
+    border-bottom: 1px solid #d9e2ec;
+    padding: 8px;
+}
+
+QTableWidget {
+    gridline-color: #e6edf5;
+    alternate-background-color: #f8fbff;
+    selection-background-color: #d7e8ff;
+    selection-color: #102a43;
+}
+
+QScrollBar:vertical,
+QScrollBar:horizontal {
+    background: transparent;
+    border: none;
+    margin: 0px;
+}
+
+QScrollBar::handle:vertical,
+QScrollBar::handle:horizontal {
+    background: #bcccdc;
+    border-radius: 6px;
+    min-height: 24px;
+    min-width: 24px;
+}
+
+QScrollBar::add-line,
+QScrollBar::sub-line,
+QScrollBar::add-page,
+QScrollBar::sub-page {
+    background: none;
+    border: none;
+}
